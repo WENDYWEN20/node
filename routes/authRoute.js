@@ -15,7 +15,11 @@ const users = [
       password: "123",
     },
   ];
+
+const { login, logout } = require("../controller/authController");
 //log in
+router.post("/login", login);
+router.post("/logout", logout);
 
 //sign out 
 const { Router } = require("express");
